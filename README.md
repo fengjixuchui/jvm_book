@@ -1,14 +1,9 @@
 # 《深入理解Java虚拟机（第3版）》
 
 > **广告**：<br/>
-> 《[现代软件架构探索:The Fenix Project](https://icyfenix.cn)》：[https://github.com/fenixsoft/awesome-fenix](https://github.com/fenixsoft/awesome-fenix)
+> 《[凤凰架构：构建可靠的大型分布式系统](https://icyfenix.cn)》：[https://github.com/fenixsoft/awesome-fenix](https://github.com/fenixsoft/awesome-fenix)
 >
-> 这是一部以“讨论如何构筑一套可靠的分布式大型软件系统”为主题的免费开源文档，如对您有用，望不吝给个Star 
-> 
-> **不是广告**：<br/>
-> 快速环境构建、编译、裁剪、调试[OpenJDK的懒人包](https://icyfenix.cn/tricks/2021/openjdk-for-dummies/)：[https://github.com/fenixsoft/openjdk-for-dummies](https://github.com/fenixsoft/openjdk-for-dummies)
-> 
-> JetBrains的远程方案，不用纠结如何搭建IDE环境调试HotSpot源码了，如对您有用，望不吝给个Star
+> 我的一本新书，也是一部以“讨论如何构筑一套可靠的分布式大型软件系统”为主题的免费开源文档，如对您有用，望不吝给个Star 
 >
 <br/>
 
@@ -18,14 +13,50 @@
 
 ### 勘误列表：
 
+- **前言VII** 为了实现JDK11新增的【嵌套内】
+<br/>更正：为了实现JDK11新增的【嵌套类】
+
 - **目录XIV，Page164** 4.3.3 VisualVM：多合 - 故障处理工具中”的【多合 - 】应该是【多合一】
 <br/>这个在原稿上是多合一，但印刷后确实怎么看都像是“多合 - ”，请编辑看看。
+
+- **Page 34**：其中lib的可选值包括有：【boot-jd】、freetype、cups、x、alsa、libffi、jtreg、libjpeg、giflib、libpng、lcms、zlib
+<br>更正：其中lib的可选值包括有：【boot-jdk】、freetype、cups、x、alsa、libffi、jtreg、libjpeg、giflib、libpng、lcms、zlib
+
+- **Page 38**：图1-11 在【NetBeans】中创建HotSpot项目（2）
+<br>更正：图1-11 在【CLion】中创建HotSpot项目（2）
+
+- **Page 124**：JDK 9之后使用【-X-log:gc*】
+<br>更正：JDK 9之后使用【-Xlog:gc*】
 
 - **Page 202**：如果使用【客户端】模式的虚拟机启动Eclipse将会使用到C2编译器
 <br>更正：如果使用【服务端】模式的虚拟机启动Eclipse将会使用到C2编译器
 
+- **Page 235**：常量表部分的输出见代码清单【6-1】，因版面原因这里省略掉
+<br>更正：常量表部分的输出见代码清单【6-2】，因版面原因这里省略掉
+
 - **Page 246**：常量池在该索引【出】必须是以下结构之一
 <br>更正：常量池在该索引【处】必须是以下结构之一
+
+- **Page 259**：代码部分排版有问题：
+   ```
+   FromTo  Target  Type
+      4    10      13   any
+     13    16      13   any
+   ```
+   应为：
+   ```
+   From    To  Target  Type
+      4    10      13   any
+     13    16      13   any
+   ```
+- **Page 282**：代码清单7-9所示为【java.lang.ClassLoader.getClassLoader()】方法的代码片段
+<br>更正：代码清单7-9所示为【java.lang.Class.getClassLoader()】方法的代码片段
+
+- **Page 282**：代码清单7-9 【ClassLoader.getClassLoader()】方法的代码片段
+<br>更正：代码清单7-9 【Class.getClassLoader()】方法的代码片段
+
+- **Page 286**：在OSGI环境下，类加载器【不再】双亲委派模型推荐的树状结构
+<br>更正：在OSGI环境下，类加载器【不再使用】双亲委派模型推荐的树状结构
 
 - **Page 378**：我们就只有使用【JSR-296】中定义的插入式注解处理器API来对Java编译子系统的行为施加影响
 <br>更正：我们就只有使用【JSR-269】中定义的插入式注解处理器API来对Java编译子系统的行为施加影响
